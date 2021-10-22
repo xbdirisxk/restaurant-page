@@ -1,20 +1,31 @@
 import "./style.css";
-import restrauntPic from "./rest-pic.jpg";
+import foodMenu from "./menu";
 
 function navigationBar() {
 	const navbar = document.createElement("div");
 	navbar.classList.add("navbar");
 
 	let span1 = document.createElement("span");
-	span1.textContent = "home";
+	span1.textContent = "Home";
 	let span2 = document.createElement("span");
-	span2.textContent = "menu";
+	span2.textContent = "Menu";
 	let span3 = document.createElement("span");
-	span3.textContent = "contact";
+	span3.textContent = "Contact";
 
 	navbar.append(span1);
 	navbar.append(span2);
 	navbar.append(span3);
+
+	span1.addEventListener("click", () => {
+		home().classList.remove("hide");
+		foodMenu().classList.add("hide");
+	});
+	span2.addEventListener("click", () => {
+		foodMenu().classList.remove("hide");
+		home().classList.add("hide");
+	});
+
+	span3.addEventListener("click", () => console.log("hey are you working "));
 
 	return navbar;
 }
@@ -38,9 +49,13 @@ function home() {
 	main.append(p);
 	main.append(btn);
 
+	main.classList.add("hide");
+
 	return main;
 }
 
 const content = document.querySelector("#content");
 content.append(navigationBar());
+
 content.append(home());
+content.append(foodMenu());
