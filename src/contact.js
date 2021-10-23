@@ -23,6 +23,8 @@ function contact() {
 	div.append(h5);
 	div.append(restaurentMap);
 
+	div.classList.add("hide");
+
 	return div;
 }
 

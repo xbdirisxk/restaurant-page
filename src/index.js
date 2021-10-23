@@ -66,8 +66,6 @@ function home() {
 	main.append(p);
 	main.append(btn);
 
-	main.classList.add("hide");
-
 	return main;
 }
 
