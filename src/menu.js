@@ -19,7 +19,7 @@ function foodMenu() {
 	food1.classList.add("food-img");
 	const br = document.createElement("br");
 	const foodName1 = document.createElement("span");
-	foodName1.textContent = "Small Pizza";
+	foodName1.textContent = "Hamburger with Chips";
 
 	div1.append(food1);
 	div1.append(br);
@@ -33,7 +33,7 @@ function foodMenu() {
 	food2.classList.add("food-img");
 	const br2 = document.createElement("br");
 	const foodName2 = document.createElement("span");
-	foodName2.textContent = "Small Pizza";
+	foodName2.textContent = "pasta";
 	div2.append(food2);
 	div2.append(br2);
 	div2.append(foodName2);
@@ -46,7 +46,7 @@ function foodMenu() {
 	food3.classList.add("food-img");
 	const br3 = document.createElement("br");
 	const foodName3 = document.createElement("span");
-	foodName3.textContent = "Small Pizza";
+	foodName3.textContent = "French Macarons";
 	div3.append(food3);
 	div3.append(br3);
 	div3.append(foodName3);
@@ -59,7 +59,7 @@ function foodMenu() {
 	food4.classList.add("food-img");
 	const br4 = document.createElement("br");
 	const foodName4 = document.createElement("span");
-	foodName4.textContent = "Small Pizza";
+	foodName4.textContent = "Grilled Barbecue";
 
 	div4.append(food4);
 	div4.append(br4);
@@ -73,7 +73,7 @@ function foodMenu() {
 	food5.classList.add("food-img");
 	const br5 = document.createElement("br");
 	const foodName5 = document.createElement("span");
-	foodName5.textContent = "Small Pizza";
+	foodName5.textContent = "Vegetable Sandwich";
 
 	div5.append(food5);
 	div5.append(br5);
@@ -87,7 +87,7 @@ function foodMenu() {
 	food6.classList.add("food-img");
 	const br6 = document.createElement("br");
 	const foodName6 = document.createElement("span");
-	foodName6.textContent = "Small Pizza";
+	foodName6.textContent = "Vegetable Salad";
 
 	div6.append(food6);
 	div6.append(br6);
@@ -101,7 +101,7 @@ function foodMenu() {
 	food7.classList.add("food-img");
 	const br7 = document.createElement("br");
 	const foodName7 = document.createElement("span");
-	foodName7.textContent = "Small Pizza";
+	foodName7.textContent = "Bowl of Vegetable Salad";
 
 	div7.append(food7);
 	div7.append(br7);
@@ -115,7 +115,7 @@ function foodMenu() {
 	food8.classList.add("food-img");
 	const br8 = document.createElement("br");
 	const foodName8 = document.createElement("span");
-	foodName8.textContent = "Small Pizza";
+	foodName8.textContent = "Chips";
 
 	div8.append(food8);
 	div8.append(br8);
@@ -130,6 +130,8 @@ function foodMenu() {
 	menu.append(div6);
 	menu.append(div7);
 	menu.append(div8);
+
+	menu.classList.add("hide");
 
 	return menu;
 }

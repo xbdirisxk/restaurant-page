@@ -22,7 +22,7 @@ body {
 	font-size: 20px;
 }
 .navbar > span:hover {
-	background-color: hsl(0, 0%, 85%);
+	background-color: hsl(9, 100%, 87%);
 	cursor: pointer;
 }
 
@@ -106,11 +106,11 @@ body {
 	padding: 20px;
 }
 
-.contact > h4 {
+.contact > h3 {
 	font-variant: small-caps;
 	margin: 0;
 }
-.contact > h5 {
+.contact > h4 {
 	margin: 5px;
 }
 

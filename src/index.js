@@ -1,5 +1,6 @@
 import "./style.css";
 import foodMenu from "./menu";
+import contact from "./contact";
 
 function navigationBar() {
 	const navbar = document.createElement("div");
@@ -17,21 +18,37 @@ function navigationBar() {
 	navbar.append(span3);
 
 	span1.addEventListener("click", () => {
-		home().classList.remove("hide");
-		foodMenu().classList.add("hide");
+		homePage.classList.remove("hide");
+		menuPage.classList.add("hide");
+		contactPage.classList.add("hide");
 	});
 	span2.addEventListener("click", () => {
-		foodMenu().classList.remove("hide");
-		home().classList.add("hide");
+		homePage.classList.add("hide");
+		menuPage.classList.remove("hide");
+		contactPage.classList.add("hide");
 	});
 
-	span3.addEventListener("click", () => console.log("hey are you working "));
+	span3.addEventListener("click", () => {
+		homePage.classList.add("hide");
+		menuPage.classList.add("hide");
+		contactPage.classList.remove("hide");
+	});
 
 	return navbar;
 }
 
 let aboutUs =
-	"Welcome,Restaurant Blatnice is one of the oldest Czech restaurant in Prague center, which offers traditional Czech specialties which you can enjoyed in the pleasant air conditioned ambience. The traditional Czech restaurant, of course, also include classic Czech wine, so we can offer a wide selection of Moravian bottled wines and complete selection of barrel wines .This wines are imported by us directly from Moravian vineyards and from Blatel, as based in St. Blatnice. Anthony, who continues the long tradition of wine growing. With traditional Czech food must drink the typical Czech beer and so we offer the most famous Czech beer brand Pilsner Urquell and not just light 'Twelve', but also unpasteurized light Gambrinus 'Ten', but also a black Kozel and halfdark Master. Since 2002, Pilsner Urquell is ranked us among the VIP‘S restaurants, which until 2005 are only nine in Prague. ";
+	"Welcome,Restaurant Blatnice is one of the oldest Czech restaurant in Prague center, \
+	 which offers traditional Czech specialties which you can enjoyed in the pleasant air \
+	 conditioned ambience. The traditional Czech restaurant, of course, also include classic Czech wine,\
+ 	 so we can offer a wide selection of Moravian bottled wines and complete selection of barrel wines .\
+	 This wines are imported by us directly from Moravian vineyards and from Blatel,\
+	 as based in St. Blatnice. Anthony, who continues the long tradition of wine growing.\
+	 With traditional Czech food must drink the typical Czech beer and so we offer the most \
+	 famous Czech beer brand Pilsner Urquell and not just light 'Twelve', \
+	 but also unpasteurized light Gambrinus 'Ten', but also a black Kozel and halfdark Master. \
+	 Since 2002, Pilsner Urquell is ranked us among the VIP‘S restaurants, \
+	 which until 2005 are only nine in Prague. ";
 function home() {
 	const main = document.createElement("main");
 	main.classList.add("main");
@@ -57,5 +74,9 @@ function home() {
 const content = document.querySelector("#content");
 content.append(navigationBar());
 
-content.append(home());
-content.append(foodMenu());
+let homePage = home();
+let menuPage = foodMenu();
+let contactPage = contact();
+content.append(homePage);
+content.append(menuPage);
+content.append(contactPage);
