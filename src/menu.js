@@ -1,12 +1,3 @@
-import foodOne from "./menu-images/food1.jpg";
-import foodTwo from "./menu-images/food2.jpg";
-import foodThree from "./menu-images/food3.jpg";
-import foodFour from "./menu-images/food4.jpg";
-import foodFive from "./menu-images/food5.jpg";
-import foodSix from "./menu-images/food6.jpg";
-import foodSeven from "./menu-images/food7.jpg";
-import foodEight from "./menu-images/food8.jpg";
-
 function foodMenu() {
 	const menu = document.createElement("div");
 	menu.classList.add("menu");
@@ -14,8 +5,8 @@ function foodMenu() {
 	// food one
 	const div1 = document.createElement("div");
 	div1.classList.add("food");
-	const food1 = new Image();
-	food1.src = foodOne;
+	const food1 = document.createElement("img");
+	food1.src = "menu-images/food1.jpg";
 	food1.classList.add("food-img");
 	const br = document.createElement("br");
 	const foodName1 = document.createElement("span");
@@ -28,8 +19,8 @@ function foodMenu() {
 	// food two
 	const div2 = document.createElement("div");
 	div2.classList.add("food");
-	const food2 = new Image();
-	food2.src = foodTwo;
+	const food2 = document.createElement("img");
+	food2.src = "menu-images/food2.jpg";
 	food2.classList.add("food-img");
 	const br2 = document.createElement("br");
 	const foodName2 = document.createElement("span");
@@ -41,8 +32,8 @@ function foodMenu() {
 	// food three
 	const div3 = document.createElement("div");
 	div3.classList.add("food");
-	const food3 = new Image();
-	food3.src = foodThree;
+	const food3 = document.createElement("img");
+	food3.src = "menu-images/food3.jpg";
 	food3.classList.add("food-img");
 	const br3 = document.createElement("br");
 	const foodName3 = document.createElement("span");
@@ -54,8 +45,8 @@ function foodMenu() {
 	// food four
 	const div4 = document.createElement("div");
 	div4.classList.add("food");
-	const food4 = new Image();
-	food4.src = foodFour;
+	const food4 = document.createElement("img");
+	food4.src = "menu-images/food4.jpg";
 	food4.classList.add("food-img");
 	const br4 = document.createElement("br");
 	const foodName4 = document.createElement("span");
@@ -68,8 +59,8 @@ function foodMenu() {
 	// food five
 	const div5 = document.createElement("div");
 	div5.classList.add("food");
-	const food5 = new Image();
-	food5.src = foodFive;
+	const food5 = document.createElement("img");
+	food5.src = "menu-images/food5.jpg";
 	food5.classList.add("food-img");
 	const br5 = document.createElement("br");
 	const foodName5 = document.createElement("span");
@@ -82,8 +73,8 @@ function foodMenu() {
 	// food six
 	const div6 = document.createElement("div");
 	div6.classList.add("food");
-	const food6 = new Image();
-	food6.src = foodSix;
+	const food6 = document.createElement("img");
+	food6.src = "menu-images/food6.jpg";
 	food6.classList.add("food-img");
 	const br6 = document.createElement("br");
 	const foodName6 = document.createElement("span");
@@ -96,8 +87,8 @@ function foodMenu() {
 	// food seven
 	const div7 = document.createElement("div");
 	div7.classList.add("food");
-	const food7 = new Image();
-	food7.src = foodSeven;
+	const food7 = document.createElement("img");
+	food7.src = "menu-images/food7.jpg";
 	food7.classList.add("food-img");
 	const br7 = document.createElement("br");
 	const foodName7 = document.createElement("span");
@@ -110,8 +101,8 @@ function foodMenu() {
 	// food eight
 	const div8 = document.createElement("div");
 	div8.classList.add("food");
-	const food8 = new Image();
-	food8.src = foodEight;
+	const food8 = document.createElement("img");
+	food8.src = "menu-images/food8.jpg";
 	food8.classList.add("food-img");
 	const br8 = document.createElement("br");
 	const foodName8 = document.createElement("span");

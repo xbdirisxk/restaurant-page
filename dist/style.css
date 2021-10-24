@@ -1,0 +1,121 @@
+:root {
+	--white-background: hsla(0, 0%, 85%, 0.9);
+}
+
+body {
+	text-align: center;
+	background: url("rest-pic.jpg");
+	background-size: cover;
+	font-family: monospace;
+}
+
+.content {
+	font-size: 20px;
+}
+.navbar {
+	display: flex;
+	justify-content: center;
+	background-color: hsl(0, 0%, 90%);
+}
+.navbar > span {
+	padding: 20px;
+	font-size: 20px;
+}
+.navbar > span:hover {
+	background-color: hsl(9, 100%, 87%);
+	cursor: pointer;
+}
+
+.main {
+	background-color: var(--white-background);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+	font-family: monospace;
+}
+.main > h1 {
+	font-variant: small-caps;
+	font-size: 40px;
+	margin: 20px;
+}
+.main > p {
+	line-height: 34px;
+	text-align: start;
+	margin: 20px;
+}
+.main > button {
+	text-align: center;
+	padding: 5px 10px;
+	background-color: hsla(229, 83%, 90%, 0.8);
+	border: 1px solid hsl(229, 83%, 70%);
+	margin: 10px;
+	font-size: 20px;
+}
+.main > button:hover {
+	background-color: hsla(229, 83%, 90%, 0.5);
+	cursor: pointer;
+}
+
+/* hide content */
+.hide {
+	display: none !important;
+}
+
+/* menu */
+
+.menu {
+	background-color: var(--white-background);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	/* margin: 20px; */
+}
+.food {
+	margin: 20px;
+}
+
+.food > .food-img {
+	max-height: 300px;
+	max-width: 300px;
+	border-radius: 10px;
+}
+
+.food:hover {
+	border-radius: 10px;
+	transform: scale(0.9);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.food > span {
+	background-color: hsl(9, 100%, 84%);
+	font-size: 1.4rem;
+	font-weight: bolder;
+	font-variant: small-caps;
+	font-family: monospace;
+}
+
+/* contact page */
+
+.contact {
+	background-color: var(--white-background);
+	padding: 20px;
+}
+
+.contact > h3 {
+	font-variant: small-caps;
+	margin: 0;
+}
+.contact > h4 {
+	margin: 5px;
+}
+
+.contact > img {
+	margin: 0;
+	max-width: 800px;
+	max-height: 700px;
+}

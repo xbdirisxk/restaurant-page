@@ -1,5 +1,3 @@
-import location from "./location.jpg";
-
 function contact() {
 	const div = document.createElement("div");
 	div.classList.add("contact");
@@ -13,8 +11,8 @@ function contact() {
 	const h5 = document.createElement("h4");
 	h5.textContent = "or visit us, check our location";
 
-	const restaurentMap = new Image();
-	restaurentMap.src = location;
+	const restaurentMap = document.createElement("img");
+	restaurentMap.src = "location.jpg";
 
 	// add image
 
